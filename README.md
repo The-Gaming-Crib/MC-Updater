@@ -1,6 +1,6 @@
-# 🧩 The Gaming Crib Plugin Redirector
+# 🧩 The Gaming Crib Geyser extention updater Redirector
 
-A lightweight serverless script designed to run on **Cloudflare Workers**. This tool provides a simple landing page and direct download redirects for Minecraft plugins (specifically Geyser extensions) hosted on **Modrinth**.
+A lightweight serverless script designed to run on **Cloudflare Workers**. This tool provides a simple landing page and direct download redirects for Geyser extensions hosted on **Modrinth**.
 
 ## 🚀 How It Works
 Instead of manually hunting for direct download links that change with every update, this script fetches the **latest** version of a plugin directly from the Modrinth API and redirects the user (or a script) to the `.jar` file.
@@ -14,9 +14,9 @@ Instead of manually hunting for direct download links that change with every upd
 
 1.  **Deploy the Script:**
     * Create a new [Cloudflare Worker](https://workers.cloudflare.com/).
-    * Paste the code from `index.js` into the Worker editor.
+    * Paste the code from `worker.js` into the Worker editor.
     * Save and Deploy.
-2.  **Adding More Plugins/Extensions:**
+2.  **Adding More Extensions:**
     * Find the plugin you want on [Modrinth](https://modrinth.com/plugins).
     * Look at the URL to find the **slug** (e.g., `https://modrinth.com/plugin/geyser-vt` → the slug is `geyser-vt`).
     * Add it to the `plugins` object in the code:
