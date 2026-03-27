@@ -38,15 +38,8 @@ You can use this Worker to keep your server extensions updated automatically or 
 This Skript example uses the `download from` effect (requires an addon like **skript-reflect** or **Skellett** depending on your setup) to pull the latest file from your redirector.
 
 ```applescript
-command /updateplugin <text>:
-    permission: admin.plugins
+command /updateMCXBroadcast:
+    aliases: /umcxb
+    permission: op
     trigger:
-        send "&b[CribUpdater] &7Fetching latest version of %arg-1%..." to player
-        
-        # This points to your Cloudflare Worker
-        set {url} to "[https://your-worker-name.workers.dev/%arg-1](https://your-worker-name.workers.dev/%arg-1)%"
-        
-        # Downloads the file to your server's plugin folder
-        download from {url} to "plugins/%arg-1%.jar"
-        
-        send "&a[CribUpdater] &f%arg-1%.jar has been updated! Restart to apply." to player
+        download file from "https://geyserupdater.letsgame6531.workers.dev/mcxboxbroadcast" to file "plugins/Geyser-Spigot/extensions/MCXboxBroadcastExtension.jar"
