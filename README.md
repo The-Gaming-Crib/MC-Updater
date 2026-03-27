@@ -55,6 +55,5 @@ Add these slugs to your Worker to get started:
 
 
 ⚖️ License & Open Source
-This project is 100% AI-generated and provided for free.
  * No Profit: This tool is intended for community use and remains non-commercial.
  * Open Source: Feel free to fork and adapt for your own server needs!
