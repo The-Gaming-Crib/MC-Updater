@@ -29,6 +29,8 @@ To add a new extension to your redirector, you need to update the `plugins` list
      "geyservt": "geyser-vt"
    }
 
+---
+
 📜 Using with Skript
 You can automate your extension updates using the Skript plugin. This requires an addon that supports web downloads (like skript-reflect or Skellett).
 How to create an update command for each extension:
@@ -45,6 +47,8 @@ command /updateMCXBroadcast:
         download file from "your-worker-url.com/mcxboxbroadcast" to file "plugins/Geyser-Spigot/extensions/MCXboxBroadcastExtension.jar"
 ```
 
+---
+
 🔌 Recommended Geyser Extensions
 Add these slugs to your Worker to get started:
 | Shortcut Name | Modrinth Slug |
@@ -53,6 +57,7 @@ Add these slugs to your Worker to get started:
 | geyserreversion | geyserreversion |
 | thirdpartycosmetics | thirdpartycosmetics |
 
+---
 
 ⚖️ License & Open Source
  * No Profit: This tool is intended for community use and remains non-commercial.
