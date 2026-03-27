@@ -37,6 +37,7 @@ When making a new Skript for an extension, you must change three specific parts 
  * The Worker URL: Make sure the end of the URL matches the "shortcut name" you set in your Worker's plugins list.
  * The File Path: Ensure the path points to your extensions folder and ends with the correct .jar filename.
 Example Template:
+```
 command /updateMCXBroadcast:
     description: Updates the MCXboxBroadcast extension
     aliases: /umcxb
@@ -46,6 +47,7 @@ command /updateMCXBroadcast:
         # 2. Change the file path to where the .jar should be saved
         download file from "[https://your-worker.workers.dev/mcxboxbroadcast](https://your-worker.workers.dev/mcxboxbroadcast)" to file "plugins/Geyser-Spigot/extensions/MCXboxBroadcastExtension.jar"
         send "&b[Updater] &fMCXboxBroadcast has been updated! Restart the server to apply."
+```
 
 🔌 Recommended Geyser Extensions
 Add these slugs to your Worker to get started:
