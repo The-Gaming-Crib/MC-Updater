@@ -39,14 +39,10 @@ When making a new Skript for an extension, you must change three specific parts 
 Example Template:
 ```
 command /updateMCXBroadcast:
-    description: Updates the MCXboxBroadcast extension
     aliases: /umcxb
     permission: op
     trigger:
-        # 1. Change the URL to your specific plugin shortcut
-        # 2. Change the file path to where the .jar should be saved
-        download file from "[https://your-worker.workers.dev/mcxboxbroadcast](https://your-worker.workers.dev/mcxboxbroadcast)" to file "plugins/Geyser-Spigot/extensions/MCXboxBroadcastExtension.jar"
-        send "&b[Updater] &fMCXboxBroadcast has been updated! Restart the server to apply."
+        download file from "your-worker-url.com/mcxboxbroadcast" to file "plugins/Geyser-Spigot/extensions/MCXboxBroadcastExtension.jar"
 ```
 
 🔌 Recommended Geyser Extensions
