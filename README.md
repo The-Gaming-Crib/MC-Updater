@@ -11,7 +11,7 @@ Instead of using Modrinth links that change every time a developer uploads a new
  1. Log in to your Cloudflare Dashboard.
  2. Navigate to **Workers & Pages** > **Create application** > **Create Worker**.
  3. Name your worker (e.g., mc-updater) and click **Deploy**.
- 4. Click **Edit Code**, paste the entire script in [worker.js](https://github.com/The-Gaming-Crib/MC-Updater/blob/main/worker.js), and click **Save and Deploy**.
+ 4. Click **Edit Code**, paste the entire script in [worker.js](worker.js), and click **Save and Deploy**.
  (if you want to link it to a Github repo fork this one)
 ### Step 2: Use the Web Interface
  1. Visit your Worker's URL (e.g., https://mc-updater.yourname.workers.dev).
